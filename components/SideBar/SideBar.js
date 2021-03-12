@@ -1,10 +1,10 @@
 import SideBarMenu from '../SideBarMenu/SideBarMenu';
 
-import SideBarStyles from '../../styles/SideBar/SideBar.module.css';
+import styles from '../../styles/SideBar/SideBar.module.css';
 
 const SideNavBar = () => {
   return (
-    <div className={SideBarStyles.sidebar}>
+    <div className={styles.sidebar}>
       <SideBarMenu />
     </div>
   );
