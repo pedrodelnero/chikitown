@@ -7,15 +7,15 @@ import {
 } from '@fortawesome/free-brands-svg-icons/';
 
 import Mobile from '../../context/Mobile';
-import SideBarStyles from '../../styles/SideBar/SideBar.module.css';
+import styles from '../../styles/SideBar/SideBar.module.css';
 
-const SidebarMenu = () => {
+const SideBarMenu = () => {
   const { isSidebarOpen, setIsSidebarOpen } = useContext(Mobile);
 
   const handleDrawerToggle = () => setIsSidebarOpen(!isSidebarOpen);
 
   return (
-    <div className={SideBarStyles.sidebarMenu}>
+    <div className={styles.sidebarMenu}>
       <div>
         <div onClick={handleDrawerToggle}>
           <Link href="/">
@@ -48,16 +48,16 @@ const SidebarMenu = () => {
           </Link>
         </div>
       </div>
-      <div className={SideBarStyles.social}>
+      <div className={styles.social}>
         <a
-          className={SideBarStyles.socialFacebook}
+          className={styles.socialFacebook}
           target="_blank"
           href="https://www.facebook.com/chikitown.playground"
         >
           <FontAwesomeIcon icon={faFacebookSquare} />
         </a>
         <a
-          className={SideBarStyles.socialInstagram}
+          className={styles.socialInstagram}
           target="_blank"
           href="https://www.instagram.com/CHIKITOWN.PLAYGROUND/"
         >
@@ -68,4 +68,4 @@ const SidebarMenu = () => {
   );
 };
 
-export default SidebarMenu;
+export default SideBarMenu;
