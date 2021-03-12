@@ -1,0 +1,148 @@
+.playContainer {
+  max-width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  overflow: hidden;
+}
+.image1,
+.image2 {
+  height: 700px;
+}
+.image1 {
+  margin-left: -260px;
+}
+
+.image2 {
+  margin-right: -300px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 900px;
+  /* background-color: #d4d4d4; */
+  text-align: center;
+}
+
+.content > h4 {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding: 0 50px;
+}
+
+.content > h2 {
+  color: #274646;
+  font-size: 2em;
+  margin: 10px;
+}
+
+.content > p {
+  font-weight: 300;
+  padding: 0 50px;
+}
+
+.playPrices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.playPrices > div > h4,
+.playPrices > div > p {
+  margin: 5px 0;
+}
+
+.playPrices > div > h4 {
+  color: #274646;
+  font-size: 1.1em;
+}
+
+.playPrices > div > p {
+  font-weight: 200;
+}
+
+.playRules {
+  margin-bottom: 20px;
+}
+
+.playRules > p {
+  margin: 5px 0;
+  font-weight: 200;
+}
+
+.playDisclaimer {
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 0 50px;
+}
+
+.playButton {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.playButton > button {
+  background-color: #274646;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 40px;
+  width: 150px;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.playButton > button:hover {
+  background-color: #636363;
+}
+
+@media only screen and (max-width: 768px) {
+  .playContainer {
+    background-color: #b5d6d5;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image1,
+  .image2 {
+    width: 500px;
+    height: 700px;
+    margin: 10px;
+  }
+
+  .content {
+    background-color: #b5d6d5;
+    width: 100%;
+    height: 750px;
+    justify-content: flex-start;
+  }
+
+  .content > h4,
+  .content > p,
+  .playDisclaimer {
+    padding: 0 20px;
+  }
+
+  .playPrices {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image1,
+  .image2 {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+  }
+
+  .content {
+    width: 100%;
+    height: 900px;
+  }
+}

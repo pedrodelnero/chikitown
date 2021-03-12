@@ -1,0 +1,134 @@
+.montessori_container {
+}
+
+.content1 {
+  background-color: #f6f6f6;
+  color: #3c6968;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.content1 > h1 {
+  width: 80%;
+}
+
+.teacher_image {
+  border-radius: 50%;
+}
+
+.content1_teacherInfo {
+  /* text-align: center; */
+  width: 60%;
+}
+
+.content1_teacherInfo > p {
+  color: #274646;
+  font-weight: 800;
+}
+
+.content1_teacherInfo_date {
+  font-weight: 800;
+  margin: 0;
+}
+
+.content1_teacherInfo_location {
+  color: #626262;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.content2 {
+  display: flex;
+}
+
+.content2 > div {
+  width: 50%;
+}
+
+.content2_side1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #427675;
+  color: white;
+}
+
+.content2_side1 > h1 {
+  font-size: 3.5em;
+}
+
+.content2_side1 > hr {
+  width: 20%;
+  border: 5px solid white;
+  border-radius: 20px;
+}
+
+.content2_side2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  color: black;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.content2_side2 > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content2_side2_price {
+  color: #3c6968;
+  text-align: center;
+}
+.content2_side2_price > h4,
+.content2_side2_time > h4 {
+  font-weight: 800;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+.content2_side2_price > p {
+  margin-top: 0;
+}
+
+.content2_side2_time {
+  color: #3c6968;
+  text-align: center;
+}
+
+.content2_side2_time > p {
+  margin-top: 0;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .content2 {
+    flex-direction: column;
+  }
+
+  .content2 > div {
+    width: 100%;
+  }
+
+  .content2_side2 {
+    font-size: 1.2em;
+  }
+
+  .content2_side2_price > h4 {
+    font-size: 3em;
+  }
+  .content2_side2_time > h4 {
+    font-size: 2em;
+  }
+
+  .content2_side2_time {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,93 @@
+.eventBasicPackages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.eventPackageItem {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 0.5px 5px grey;
+  width: 350px;
+  height: 750px;
+}
+
+.eventPackageItemHeader {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.eventPackageItemInfo {
+  position: relative;
+  color: #2c4344;
+  font-weight: 500;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.eventPackageItemPrice {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.eventPackageItemPriceTax {
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+.eventPackageItemInfo > ul {
+  color: black;
+  list-style: none;
+  font-weight: 300;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.eventPackageItemInfo > ul > li {
+  margin-bottom: 10px;
+}
+
+.eventPackageItemBottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.eventPackageItemBottom > button {
+  background-color: #3c6968;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.2em;
+}
+.eventPackageItemBottom > button:hover {
+  background-color: #6d6d6d;
+}
+
+@media only screen and (max-width: 1024px) {
+  .eventPackageItem {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eventBasicPackages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .eventPackageItem {
+    height: 550px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* margin: 0 10px; */
+  }
+
+  .eventPackageItemHeader {
+    display: none;
+  }
+}

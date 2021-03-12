@@ -1,0 +1,156 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6cabac;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.header > hr {
+  width: 10%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.header_part1 > h1,
+.header_part1 > h2 {
+  margin: 10px 0;
+}
+
+.header_part1 > h1 {
+  font-size: 3em;
+}
+
+.header_part1 > h2 {
+  color: #777777;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.header_part2 > h2,
+.header_part2 > h3 {
+  margin: 10px 0;
+}
+
+.header_part2 > h2 {
+  font-weight: 200;
+  font-size: 2.4em;
+}
+
+.header_part2 > h3 {
+  color: #ededed;
+  font-size: 1.7em;
+  /* font-weight: 600; */
+}
+
+.header_part3 {
+  margin-top: 20px;
+}
+
+.header_part3 > a {
+  display: inline-block;
+  margin: 0 10px;
+  height: 35px;
+  width: 35px;
+}
+
+.header_part3 > a > svg {
+  font-size: 35px;
+}
+
+.headerSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  /* position: relative; */
+  height: 500px;
+  width: 100%;
+}
+
+.content_packages > h1 {
+  color: #3c6968;
+  text-align: center;
+  font-size: 5em;
+  margin: 20px 0;
+}
+
+.content_package {
+  /* border: 1px solid red; */
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.package_item {
+  position: relative;
+  /* border: 1px solid cyan; */
+  width: 300px;
+  height: 550px;
+  box-shadow: -1px 0.5px 5px grey;
+  padding: 0 10px;
+}
+
+.package_item_photo {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.package_item > div > h2 {
+  color: #3c6968;
+  margin: 10px 0;
+}
+
+.package_item > div > ul {
+  list-style: none;
+  padding: 0;
+  color: #5a7285;
+}
+
+.package_item_price {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  color: #6aaaab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package_item_price > button {
+  background-color: #3c6968;
+  color: white;
+  border: none;
+  /* border: 0.1px solid black; */
+  border-radius: 10px;
+  width: 130px;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+.package_item_price > button:hover {
+  background-color: #5ccade;
+}
+
+@media only screen and (max-width: 768px) {
+  .content_packages > h1 {
+    font-size: 2em;
+  }
+
+  .content_package {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    align-items: center;
+  }
+
+  .package_item {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}

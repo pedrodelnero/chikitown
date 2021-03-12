@@ -1,0 +1,33 @@
+.contact_container {
+  /* border: 1px dashed blue; */
+  display: flex;
+  /* width: 100%; */
+  height: 100%;
+  justify-content: center;
+}
+
+.map {
+  position: relative;
+  /* border: 1px solid cyan; */
+  width: 40%;
+  /* padding: 0 20px; */
+}
+
+.form {
+  padding-left: 15px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 764px) {
+  .contact_container {
+    flex-direction: column-reverse;
+    height: 1000px;
+  }
+
+  .map,
+  .form {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}

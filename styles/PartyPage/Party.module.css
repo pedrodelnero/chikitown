@@ -1,0 +1,33 @@
+.events {
+  text-align: center;
+}
+
+.events > h1 {
+  color: #a4cccb;
+  font-size: 3em;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms > h2 {
+  columns: #213a3b;
+  margin-bottom: 5px;
+}
+
+.terms > p {
+  margin: 0;
+}
+.terms > p,
+.terms > ul {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+  .events > h1 {
+    font-size: 2em;
+  }
+}

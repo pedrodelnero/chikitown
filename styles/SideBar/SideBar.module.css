@@ -1,0 +1,46 @@
+.sidebar {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sidebarMenu {
+  background-color: white;
+  color: black;
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sidebarMenu > div {
+  font-weight: 200;
+}
+
+.sidebarMenu > div > div {
+  margin-bottom: 30px;
+}
+
+.sidebarMenu > div > div > h2 {
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+.social > a {
+  margin: 0 15px;
+}
+
+.social > a > svg {
+  font-size: 50px;
+}
+
+.socialFacebook {
+  color: #3b5998;
+}
+
+.socialInstagram {
+  color: #e1306c;
+}
