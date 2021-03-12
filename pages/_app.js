@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import Mobile from '../context/Mobile';
 import Nav from '../components/Nav/Nav';
-// import SideBarMenu from "../components/SideBarMenu/SideBarMenu";
 import SideBar from '../components/SideBar/SideBar';
 import '../styles/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
