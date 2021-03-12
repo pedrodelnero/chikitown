@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import Meta from '../components/Meta';
 import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
@@ -7,67 +8,83 @@ import { BasicEvents } from '../components/PartyPage';
 import partyStyles from '../styles/PartyPage/Party.module.css';
 
 const party = () => {
-  const [sliderRef] = useKeenSlider({
-    slidesPerView: 2,
-    mode: 'free-snap',
-    spacing: 2,
-    centered: true,
+  const [numSlides, setNumSlides] = useState(1);
+  const [pause, setPause] = useState(false);
+  const timer = useRef();
+  const [sliderRef, slider] = useKeenSlider({
     loop: true,
+    centered: true,
+    rtl: true,
+    slidesPerView: numSlides,
+    spacing: 10,
+    loop: true,
+    duration: 1000,
+    dragStart: () => {
+      setPause(true);
+    },
+    dragEnd: () => {
+      setPause(false);
+    },
   });
+
+  useEffect(() => {
+    if (window.innerWidth > 1000 && window.innerWidth < 1100) {
+      setNumSlides(2);
+    } else if (window.innerWidth < 1000) {
+      setNumSlides(1);
+    } else {
+      setNumSlides(4);
+    }
+  }, []);
+
+  useEffect(() => {
+    sliderRef.current.addEventListener('mouseover', () => {
+      setPause(true);
+    });
+    sliderRef.current.addEventListener('mouseout', () => {
+      setPause(false);
+    });
+  }, [sliderRef]);
+
+  useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next();
+      }
+    }, 2000);
+    return () => {
+      clearInterval(timer.current);
+    };
+  }, [pause, slider]);
 
   return (
     <div>
       <Meta title="Party | Chiki Town" />
-      <div
-        ref={sliderRef}
-        className="keen-slider"
-        // style={{ width: '100%', height: '640px', border: '1px solid red' }}
-      >
+      <div ref={sliderRef} className="keen-slider" style={{ height: '500px' }}>
         <div className="keen-slider__slide">
           <Image
             src="/party/carousel1.jpg"
             alt="photo 1"
-            width="480px"
-            height="640px"
-            layout="intrinsic"
+            // width="375px"
+            // height="500px"
+            // width="480px"
+            // height="640px"
+            layout="fill"
           />
         </div>
         <div className="keen-slider__slide">
-          <Image
-            src="/party/carousel2.jpg"
-            alt="photo 2"
-            width="480px"
-            height="640px"
-            layout="intrinsic"
-          />
+          <Image src="/party/carousel2.jpg" alt="photo 2" layout="fill" />
         </div>
         <div className="keen-slider__slide">
-          <Image
-            src="/party/carousel3.jpg"
-            alt="photo 3"
-            width="480px"
-            height="640px"
-            layout="intrinsic"
-          />
+          <Image src="/party/carousel3.jpg" alt="photo 3" layout="fill" />
         </div>
         <div className="keen-slider__slide">
-          <Image
-            src="/party/carousel4.jpg"
-            alt="photo 4"
-            width="480px"
-            height="640px"
-            layout="intrinsic"
-          />
+          <Image src="/party/carousel4.jpg" alt="photo 4" layout="fill" />
         </div>
-
-        {/* <div className="keen-slider__slide number-slide1">1</div> */}
+        <div className="keen-slider__slide">
+          <Image src="/party/carousel5.jpg" alt="photo 5" layout="fill" />
+        </div>
       </div>
-      {/* <Image
-        src="/party_header.png"
-        layout="responsive"
-        width={100}
-        height={50}
-      /> */}
       <div className={partyStyles.events}>
         <h1>SMALL GROUP EVENT PACKAGES</h1>
         <BasicEvents />
