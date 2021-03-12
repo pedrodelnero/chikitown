@@ -1,9 +1,9 @@
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons/";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons/";
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons/';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons/';
 
-import styles from "../styles/Footer.module.css";
+import styles from '../styles/Footer.module.css';
 
 const Footer = () => {
   return (
@@ -20,10 +20,10 @@ const Footer = () => {
             <Link href="/party">PARTY</Link>
           </li>
           <li>
-            <Link href="/montessori">MONTESSORI</Link>
+            <Link href="/chiki-to-go">CHIKI TO GO</Link>
           </li>
           <li>
-            <Link href="/chiki-to-go">CHIKI TO GO</Link>
+            <Link href="/chiki-club">CHIKI CLUB</Link>
           </li>
           <li>
             <Link href="/contact">CONTACT</Link>

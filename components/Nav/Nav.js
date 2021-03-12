@@ -12,9 +12,9 @@ const Nav = () => {
 
   return (
     <nav className={navStyles.nav}>
-      <div>
+      <Link href="/">
         <img src="/logo.jpg" className={navStyles.logo} />
-      </div>
+      </Link>
       <div
         className={navStyles.mobileBarMenu}
         onClick={() => {

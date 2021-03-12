@@ -25,9 +25,7 @@ export default function Home() {
           <p className={styles.listItem_firstP}>
             Celebrate and make some memories that will last a lifetime.
           </p>
-          <a href="https://www.zumbini.com/en/instructor/Stephanie%20-Levine/49196">
-            Learn More
-          </a>
+          <Link href="/party">Learn More</Link>
         </div>
         <div className={styles.listItem}>
           <Image
