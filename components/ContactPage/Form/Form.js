@@ -2,6 +2,7 @@ import contactFormStyles from '../../../styles/ContactPage/Form.module.css';
 import emailjs from 'emailjs-com';
 
 const Form = () => {
+  console.log('id', process.env.NEXT_PUBLIC_USER_ID);
   const handleSubmitForm = (e) => {
     e.preventDefault();
 
