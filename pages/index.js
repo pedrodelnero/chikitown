@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.list}>
         <div className={styles.listItem}>
-          <Image src="/home/play.jpg" layout="fixed" width={300} height={300} />
+          <img src="/home/play.jpg" alt="play" width="300" height="300" />
           <h3>PRIVATE PLAY</h3>
           <p className={styles.listItem_firstP}>
             It is a fully private resevation for your family and friends
@@ -15,12 +15,7 @@ export default function Home() {
           <Link href="/play">Learn More</Link>
         </div>
         <div className={styles.listItem}>
-          <Image
-            src="/home/party.jpg"
-            layout="fixed"
-            width={300}
-            height={300}
-          />
+          <img src="/home/party.jpg" alt="party" width="300" height="300" />
           <h3>PARTY</h3>
           <p className={styles.listItem_firstP}>
             Celebrate and make some memories that will last a lifetime.
@@ -28,11 +23,11 @@ export default function Home() {
           <Link href="/party">Learn More</Link>
         </div>
         <div className={styles.listItem}>
-          <Image
+          <img
             src="/home/chikitogo.jpg"
-            layout="fixed"
-            width={300}
-            height={300}
+            alt="chiki to go"
+            width="300"
+            height="300"
           />
           <h3>CHIKI TO GO</h3>
           <p className={styles.listItem_firstP}>
@@ -42,11 +37,11 @@ export default function Home() {
           <Link href="/chiki-to-go">Learn More</Link>
         </div>
         <div className={styles.listItem}>
-          <Image
+          <img
             src="/home/chikiclub.jpg"
-            layout="fixed"
-            width={300}
-            height={300}
+            alt="chiki club"
+            width="300"
+            height="300"
           />
           <h3>CHIKI CLUB</h3>
           <p className={styles.listItem_firstP}>
