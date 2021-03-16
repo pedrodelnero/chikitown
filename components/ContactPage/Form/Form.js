@@ -1,6 +1,29 @@
 import contactFormStyles from '../../../styles/ContactPage/Form.module.css';
+import emailjs from 'emailjs-com';
 
 const Form = () => {
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        e.target,
+        process.env.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className={contactFormStyles.container}>
       <h1>CONTACT US</h1>
@@ -9,17 +32,18 @@ const Form = () => {
       <p>
         786.581.9701 - <strong>Send us a message via WhatsApp</strong>
       </p>
-      <form className={contactFormStyles.form}>
+      <form onSubmit={handleSubmitForm} className={contactFormStyles.form}>
         <div>
-          <input type="text" placeholder="Name"></input>
-          <input type="text" placeholder="Email"></input>
+          <input type="text" placeholder="Name" name="name" />
+          <input type="text" placeholder="Email" name="email" />
         </div>
-        <input type="text" placeholder="Subject"></input>
+        <input type="text" placeholder="Subject" name="subject" />
         <textarea
           type="text"
           placeholder="Type your message here..."
-        ></textarea>
-        <button>Submit</button>
+          name="message"
+        />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
