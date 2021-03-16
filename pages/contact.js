@@ -8,7 +8,7 @@ const contact = () => {
   return (
     <div className={styles.contact_container}>
       <Meta title="Contact | ChikiTown" />
-      <div className={styles.map}>
+      <div className={styles.image}>
         <Image src="/contact/entrance.jpg" alt="entrance" layout="fill" />
       </div>
       <div className={styles.form}>
