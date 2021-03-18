@@ -10,10 +10,10 @@
   position: relative;
   /* border: 1px solid cyan; */
   width: 40%;
-  /* padding: 0 20px; */
 }
 
 .form {
+  /* border: 1px solid red; */
   padding-left: 15px;
   width: 40%;
 }

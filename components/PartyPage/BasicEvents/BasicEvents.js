@@ -63,7 +63,7 @@ const BasicEvents = () => {
             + Tax + 18% Service Charge
           </p>
           <ul>
-            <li>2-Hours Private Party</li>
+            <li>3-Hours Private Party</li>
             <li>Up to 20 people (Adult & Children)</li>
             <li>(Add. $20 per person - Max. 25 people)</li>
             <li>2 Chiki Staff</li>
