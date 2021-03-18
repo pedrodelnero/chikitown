@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: #a5cece;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .package {
@@ -14,11 +13,13 @@
 }
 
 .packageMainImage {
-  position: relative;
+  /* position: relative; */
   width: 80%;
+  margin: 0;
 }
 
 .subContainer {
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -28,7 +29,6 @@
   position: relative;
   width: 300px;
   height: 900px;
-  /* border: 1px solid pink; */
   background-color: #f0d80c;
   text-align: center;
 }
@@ -89,11 +89,15 @@
   }
 
   .subPackage {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .subPackageImage {
-    width: 100%;
+    width: 365px;
+    height: 365px;
   }
 
   .subPackagePrice {

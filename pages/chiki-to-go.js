@@ -248,7 +248,7 @@ const chikitogo = () => {
           <strong>Staff not included</strong>
         </li>
         <li>
-          <strong>Availbale upon request</strong>
+          <strong>Available upon request</strong>
         </li>
       </ul>
     </div>
