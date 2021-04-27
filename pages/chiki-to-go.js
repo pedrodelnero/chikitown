@@ -136,7 +136,7 @@ const chikitogo = () => {
               />
             </div>
             <div className={styles.subPackageBody_Plus}>
-              <h3 className={styles.subPackageTitle}>CLUBHOUSE PLUS</h3>
+              <h3 className={styles.subPackageTitle}>DELUXE</h3>
               <ul>
                 <li>300 SQF Soft Flooring</li>
                 <li>
@@ -222,7 +222,7 @@ const chikitogo = () => {
               />
             </div>
             <div className={styles.subPackageBody_Plus}>
-              <h3 className={styles.subPackageTitle}>PLUS</h3>
+              <h3 className={styles.subPackageTitle}>DELUXE</h3>
               <ul>
                 <li>275 SQF Soft Flooring</li>
                 <li>Octagonal Ball Pit w/ Stairs (White Balls)</li>
