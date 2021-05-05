@@ -8,7 +8,7 @@ const BasicEvents = () => {
       <div className={partyBasicStyles.eventPackageItem}>
         <div className={partyBasicStyles.eventPackageItemInfo}>
           <h2>DOWNTOWN</h2>
-          <p className={partyBasicStyles.eventPackageItemPrice}>$200</p>
+          <p className={partyBasicStyles.eventPackageItemPrice}>$250</p>
           <p className={partyBasicStyles.eventPackageItemPriceTax}>
             + Tax + 18% Service Charge
           </p>
@@ -32,7 +32,7 @@ const BasicEvents = () => {
       <div className={partyBasicStyles.eventPackageItem}>
         <div className={partyBasicStyles.eventPackageItemInfo}>
           <h2>MIDTOWN</h2>
-          <p className={partyBasicStyles.eventPackageItemPrice}>$375</p>
+          <p className={partyBasicStyles.eventPackageItemPrice}>$395</p>
           <p className={partyBasicStyles.eventPackageItemPriceTax}>
             + Tax + 18% Service Charge
           </p>
@@ -58,7 +58,7 @@ const BasicEvents = () => {
       <div className={partyBasicStyles.eventPackageItem}>
         <div className={partyBasicStyles.eventPackageItemInfo}>
           <h2>UPTOWN</h2>
-          <p className={partyBasicStyles.eventPackageItemPrice}>$550</p>
+          <p className={partyBasicStyles.eventPackageItemPrice}>$575</p>
           <p className={partyBasicStyles.eventPackageItemPriceTax}>
             + Tax + 18% Service Charge
           </p>
