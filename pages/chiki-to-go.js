@@ -35,7 +35,7 @@ const chikitogo = () => {
                 <li>3-pcs Soft Play (Tunnel)</li>
                 <li>1 Hopper + 1 Rocker</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$395</h3>
+              <h3 className={styles.subPackagePrice}>$450</h3>
             </div>
           </div>
           <div className={styles.subPackage}>
@@ -54,15 +54,15 @@ const chikitogo = () => {
                 <li>175 SQF Soft Flooring</li>
                 <li>Octagonal Ball Pit w/ Stairs</li>
                 <li>
-                  7-pcs Soft Play <br />
+                  5-pcs Soft Play <br />
                   (Tunnel & House)
                 </li>
-                <li>6-pcs Soft Play Blocks</li>
+                <li>3-pcs Soft Play Blocks</li>
                 <li>2 Hoppers + 1 Rocker</li>
                 <li>Fence</li>
                 <li>1 Shoe Bin</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$550</h3>
+              <h3 className={styles.subPackagePrice}>$575</h3>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ const chikitogo = () => {
                 <li>1 Hopper + 1 Rocker</li>
                 <li>6-pcs Soft Blocks</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$450</h3>
+              <h3 className={styles.subPackagePrice}>$495</h3>
             </div>
           </div>
           <div className={styles.subPackage}>
@@ -122,7 +122,7 @@ const chikitogo = () => {
                 <li>Fence</li>
                 <li>1 Shoe Bin</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$595</h3>
+              <h3 className={styles.subPackagePrice}>$650</h3>
             </div>
           </div>
           <div className={styles.subPackage}>
@@ -184,7 +184,7 @@ const chikitogo = () => {
                 <li>3-pcs Soft Play House</li>
                 <li>2 Unicorn Hoppers</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$395</h3>
+              <h3 className={styles.subPackagePrice}>$475</h3>
             </div>
           </div>
           <div className={styles.subPackage}>
@@ -208,7 +208,7 @@ const chikitogo = () => {
                 <li>Pink Fence</li>
                 <li>1 Shoe Bin</li>
               </ul>
-              <h3 className={styles.subPackagePrice}>$550</h3>
+              <h3 className={styles.subPackagePrice}>$625</h3>
             </div>
           </div>
           <div className={styles.subPackage}>
@@ -239,10 +239,13 @@ const chikitogo = () => {
       </div>
       <ul style={{ color: '#8F867F', marginTop: '20px' }}>
         <li>
-          <strong>Prices are for up to 6 hours rentals</strong>
+          <strong>Prices are for up to 4 hours rentals</strong>
         </li>
         <li>
           <strong>Prices include delivery to Miami area</strong>
+        </li>
+        <li>
+          <strong>Prices are subject to change without notice.</strong>
         </li>
         <li>
           <strong>Staff not included</strong>
