@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Meta from '../components/Meta';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
@@ -62,27 +62,44 @@ const party = () => {
       <Meta title="Party | Chiki Town" />
       <div ref={sliderRef} className="keen-slider" style={{ height: '500px' }}>
         <div className="keen-slider__slide">
-          <Image
+          <img
             src="/party/carousel1.jpg"
             alt="photo 1"
-            // width="375px"
-            // height="500px"
-            // width="480px"
-            // height="640px"
-            layout="fill"
+            style={{ height: '100%', width: '100%' }}
           />
+          {/* <Image src="/party/carousel1.jpg" alt="photo 1" layout="fill" /> */}
         </div>
         <div className="keen-slider__slide">
-          <Image src="/party/carousel2.jpg" alt="photo 2" layout="fill" />
+          <img
+            src="/party/carousel2.jpg"
+            alt="photo 2"
+            style={{ height: '100%', width: '100%' }}
+          />
+          {/* <Image src="/party/carousel2.jpg" alt="photo 2" layout="fill" /> */}
         </div>
         <div className="keen-slider__slide">
-          <Image src="/party/carousel3.jpg" alt="photo 3" layout="fill" />
+          <img
+            src="/party/carousel3.jpg"
+            alt="photo 3"
+            style={{ height: '100%', width: '100%' }}
+          />
+          {/* <Image src="/party/carousel3.jpg" alt="photo 3" layout="fill" /> */}
         </div>
         <div className="keen-slider__slide">
-          <Image src="/party/carousel4.jpg" alt="photo 4" layout="fill" />
+          <img
+            src="/party/carousel4.jpg"
+            alt="photo 4"
+            style={{ height: '100%', width: '100%' }}
+          />
+          {/* <Image src="/party/carousel4.jpg" alt="photo 4" layout="fill" /> */}
         </div>
         <div className="keen-slider__slide">
-          <Image src="/party/carousel5.jpg" alt="photo 5" layout="fill" />
+          <img
+            src="/party/carousel5.jpg"
+            alt="photo 5"
+            style={{ height: '100%', width: '100%' }}
+          />
+          {/* <Image src="/party/carousel5.jpg" alt="photo 5" layout="fill" /> */}
         </div>
       </div>
       <div className={partyStyles.events}>
