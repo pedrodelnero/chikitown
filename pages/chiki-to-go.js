@@ -1,5 +1,5 @@
 import Meta from '../components/Meta';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import styles from '../styles/ChikitogoPage/Chikitogo.module.css';
 
@@ -19,12 +19,10 @@ const chikitogo = () => {
         <div className={styles.subContainer}>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
                 src="/chikitogo/playland/micro.jpg"
-                layout="fill"
                 alt="Micro photo"
-                // width={300}
-                // height={300}
+                style={{ height: '100%', width: '100%' }}
               />
             </div>
             <div className={styles.subPackageBody}>
@@ -40,12 +38,10 @@ const chikitogo = () => {
           </div>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
                 src="/chikitogo/playland/plus.jpg"
-                layout="fill"
                 alt="Plus photo"
-                // width={300}
-                // height={300}
+                style={{ height: '100%', width: '100%' }}
               />
             </div>
             <div className={styles.subPackageBody_Plus}>
@@ -78,12 +74,10 @@ const chikitogo = () => {
         <div className={styles.subContainer}>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
                 src="/chikitogo/clubhouse/micro.jpg"
-                layout="fill"
                 alt="Micro photo"
-                // width={300}
-                // height={300}
+                style={{ height: '100%', width: '100%' }}
               />
             </div>
             <div className={styles.subPackageBody_Plus}>
@@ -100,13 +94,18 @@ const chikitogo = () => {
           </div>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
+                src="/chikitogo/clubhouse/plus.jpg"
+                alt="Plus photo"
+                style={{ height: '100%', width: '100%' }}
+              />
+              {/* <Image
                 src="/chikitogo/clubhouse/plus.jpg"
                 layout="fill"
                 alt="Plus photo"
                 // width={300}
                 // height={300}
-              />
+              /> */}
             </div>
             <div className={styles.subPackageBody_Plus}>
               <h3 className={styles.subPackageTitle}>PLUS</h3>
@@ -127,13 +126,18 @@ const chikitogo = () => {
           </div>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
+                src="/chikitogo/clubhouse/deluxe.jpg"
+                alt="Plus photo"
+                style={{ height: '100%', width: '100%' }}
+              />
+              {/* <Image
                 src="/chikitogo/clubhouse/deluxe.jpg"
                 layout="fill"
                 alt="Plus photo"
                 // width={300}
                 // height={300}
-              />
+              /> */}
             </div>
             <div className={styles.subPackageBody_Plus}>
               <h3 className={styles.subPackageTitle}>DELUXE</h3>
@@ -168,13 +172,18 @@ const chikitogo = () => {
         <div className={styles.subContainer}>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
+                src="/chikitogo/wonderland/micro.jpg"
+                alt="Micro photo"
+                style={{ height: '100%', width: '100%' }}
+              />
+              {/* <Image
                 src="/chikitogo/wonderland/micro.jpg"
                 layout="fill"
                 alt="Micro photo"
                 // width={300}
                 // height={300}
-              />
+              /> */}
             </div>
             <div className={styles.subPackageBody}>
               <h3 className={styles.subPackageTitle}>MICRO</h3>
@@ -189,13 +198,18 @@ const chikitogo = () => {
           </div>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
+                src="/chikitogo/wonderland/plus.jpg"
+                alt="Plus photo"
+                style={{ height: '100%', width: '100%' }}
+              />
+              {/* <Image
                 src="/chikitogo/wonderland/plus.jpg"
                 layout="fill"
                 alt="Plus photo"
                 // width={300}
                 // height={300}
-              />
+              /> */}
             </div>
             <div className={styles.subPackageBody_Plus}>
               <h3 className={styles.subPackageTitle}>PLUS</h3>
@@ -213,13 +227,18 @@ const chikitogo = () => {
           </div>
           <div className={styles.subPackage}>
             <div className={styles.subPackageImage}>
-              <Image
+              <img
+                src="/chikitogo/wonderland/deluxe.jpg"
+                alt="Deluxe photo"
+                style={{ height: '100%', width: '100%' }}
+              />
+              {/* <Image
                 src="/chikitogo/wonderland/deluxe.jpg"
                 layout="fill"
                 alt="Deluxe photo"
                 // width={300}
                 // height={300}
-              />
+              /> */}
             </div>
             <div className={styles.subPackageBody_Plus}>
               <h3 className={styles.subPackageTitle}>DELUXE</h3>
