@@ -104,7 +104,8 @@ const party = () => {
       </div>
       <div className={partyStyles.events}>
         <h1>SMALL GROUP EVENT PACKAGES</h1>
-        <BasicEvents />
+        <h3>Under contruction...</h3>
+        {/* <BasicEvents /> */}
       </div>
       <div className={partyStyles.terms}>
         <h2>Terms & Conditions</h2>
