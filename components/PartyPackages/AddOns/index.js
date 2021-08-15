@@ -24,7 +24,7 @@ const BasicEvents = () => {
           <h2>CAKE TABLE DECORATION</h2>
           <h3>$475</h3>
           <p>4' WHITE WOODEN TABLE</p>
-          <p>4'X5" PERSONALIZED BACKDROP</p>
+          <p>4'X5' PERSONALIZED BACKDROP</p>
           <p>ORGANIC BALLOON GARLAND AROUND THE BACKDROP</p>
           <p>CAKE & DESSERT STANDS</p>
         </div>
