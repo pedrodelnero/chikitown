@@ -1,0 +1,87 @@
+.packagesContainer {
+  width: 100%;
+}
+
+.container > h1 {
+  width: 100%;
+  background-color: #f7de7a;
+  color: white;
+  padding: 10px 0;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+.packagesContainer > div > h2 {
+  color: #a4cccb;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.4rem;
+}
+
+.packagesContainer > div > h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.packagesContainer > div > h2,
+.packagesContainer > div > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.packagesContainer > div > h3,
+.packagesContainer > div > p {
+  color: #9c908c;
+  font-weight: 600;
+}
+
+.packageContainerInline {
+  display: inline-block;
+  width: calc(100% / 3);
+}
+
+.packageContainerBottom {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.packageContainerBottom > p {
+  font-size: 0.8rem;
+  word-spacing: 0.3rem;
+}
+
+@media (max-width: 900px) {
+  .packagesContainer > div > h2 {
+    font-size: 1.5rem;
+  }
+  .packagesContainer > div > h3 {
+    font-size: 1.2rem;
+  }
+
+  .packageContainerInline > p {
+    font-size: 0.8rem;
+  }
+
+  .packageContainerBottom > p {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container > h1 {
+    font-size: 2.5rem;
+    /* letter-spacing: 0.5rem; */
+  }
+
+  .packagesContainer {
+    padding: 0 20px;
+  }
+
+  .packageContainerInline {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

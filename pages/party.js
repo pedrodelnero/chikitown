@@ -4,7 +4,7 @@ import Meta from '../components/Meta';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
-import { BasicEvents } from '../components/PartyPage';
+import { AddOns, Packages } from '../components/PartyPackages';
 import partyStyles from '../styles/PartyPage/Party.module.css';
 
 const party = () => {
@@ -103,9 +103,8 @@ const party = () => {
         </div>
       </div>
       <div className={partyStyles.events}>
-        <h1>SMALL GROUP EVENT PACKAGES</h1>
-        <h3>Under contruction...</h3>
-        {/* <BasicEvents /> */}
+        <Packages />
+        <AddOns />
       </div>
       <div className={partyStyles.terms}>
         <h2>Terms & Conditions</h2>

@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.events > h1 {
-  color: #a4cccb;
-  font-size: 3em;
-}
-
 .terms {
   display: flex;
   flex-direction: column;
@@ -21,13 +16,8 @@
 .terms > p {
   margin: 0;
 }
+
 .terms > p,
 .terms > ul {
   font-weight: 300;
-}
-
-@media only screen and (max-width: 1024px) {
-  .events > h1 {
-    font-size: 2em;
-  }
 }
